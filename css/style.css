@@ -46,7 +46,7 @@
     font-weight: 700;
 }
 
-/* -------------------------------------body style */
+/* ALL */
 
 * {
     -webkit-box-sizing: border-box;
@@ -74,63 +74,9 @@ body {
 
 
 
-.nav-title {
-    font-family: 'Raleway';
-    font-weight: 600;
-    font-size: 1.37rem;
-    line-height: 18px;
-    color: #222222;
-}
-
-.nav-title-note {
-    font-family: 'HelveticaNeue-Regular';
-    font-size: 1rem;
-    line-height: 26px;
-    color: #848484;
-}
-
-.form-title {
-    font-family: 'Raleway';
-    font-weight: 600;
-    font-size: 1.375rem;
-    line-height: 18px;
-    color: #222222;
-}
-
-.form-title-note {
-    font-family: 'HelveticaNeue-Regular';
-    font-size: 1rem;
-    line-height: 26px;
-    color: #848484;
-}
-
-input[type="email"] {
-    font-family: 'HelveticaNeue-Regular';
-    font-size: 1.125rem;
-    line-height: 18px;
-    color: #848484;
-    width: 56%;
-    padding: 3.865% 4.233% 3.129%;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border: 1px solid #c8c8c8;
-}
 
 
-input[type="submit"] {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 1.375rem;
-    line-height: 18px;
-    color: #ffffff;
-    width: 26.320%;
-    padding: 3.681% 0.920%;
-    margin-left: -1.104%;
-    background-color: #2ecc71;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: none;
-}
+
 
 q {
     font-family: 'helveticaneuecyritalic';
@@ -212,9 +158,10 @@ b {
 
 .main-nav ul {
     display: flex;
+    margin-left: 0.65%;
 }
 
-/* --------------------------------STYLE FOR HEADER */
+/* --HEADER START-- */
 
 header {
     background-color: #2ecc71;
@@ -228,8 +175,6 @@ header {
     background-position: center;
     background-size: cover;
 }
-
-/* ---------------------------------------styles for banner's content */
 
 .container-banner {
     margin-left: 20.4375%;
@@ -264,32 +209,50 @@ header {
     margin: 0;
 }
 
-@media only screen and (max-width: 1024px) {
+.main-nav {
+    margin: 0;
+}
 
-    /* styles for banner's content */
+.operation-sistems,
+.operation-sistems a {
+    border-radius: 50%;
+    width: 51px;
+    height: 51px;
+}
+
+.operation-sistems {
+    background-color: #38251b;
+    opacity: .7;
+    margin-right: 3.8%;
+}
+
+.operation-sistems:hover {
+    background: #2ecc71;
+    opacity: 1;
+}
+
+.apple {
+    background: url('../images/sprits/spritesheet.png')no-repeat -84px -14px;
+}
+
+.android {
+    background: url('../images/sprits/spritesheet.png')no-repeat -11px -12px;
+}
+
+.windows {
+    background: url('../images/sprits/spritesheet.png')no-repeat -159px -12px;
+}
+
+@media only screen and (max-width: 1024px) {
 
     .container-banner {
         margin-left: 10%;
         width: 39%;
         padding-top: 10%;
     }
-
-    .container-banner h1 {
-        /*! padding-bottom: 17%; */
-        /*! font-size: 4rem; */
-    }
-
-    .container-banner p {
-        /*! font-size: 1.4rem; */
-    }
-}
-
-@media only screen and (max-width: 667px) {
-
 }
 
 @media only screen and (max-width: 375px) {
-    /* ---------------------------------------styles for banner's content */
 
     .banner {
         height: calc(100vh - 10px);
@@ -310,111 +273,61 @@ header {
         font-size: 6rem;
     }
 
-    .container-banner h1 span {
-        color: #2ecc71;
-    }
-
     .container-banner p {
-        padding: 0 0 4.7311% 0.431%;
-        margin: 0;
         text-align: center;
         padding-bottom: 45%;
         font-size: 2rem;
         line-height: 1.5em;
     }
+
+    .main-nav ul {
+        justify-content: center;
+    }
 }
 
-/* -------------------------------------styles for banner's navigation */
-
-.main-nav {
-    /*! padding-bottom: 38%; */
-    margin: 0;
-}
-
-.operation-sistems,
-.operation-sistems a {
-    border-radius: 50%;
-    width: 51px;
-    height: 51px;
-}
-
-.operation-sistems:first-of-type {
-    /*! margin-left: 0.6453%; */
-}
-
-.operation-sistems {
-    background-color: #38251b;
-    opacity: .7;
-    margin-right: 3.655%;
-    /*! letter-spacing: 2.5rem; */
-}
-
-.operation-sistems:hover {
-    background: #2ecc71;
-    opacity: 1;
-}
-
-.apple {
-    background: url('../images/sprits/spritesheet.png')no-repeat -84px -14px;
-}
-
-.android {
-    background: url('../images/sprits/spritesheet.png')no-repeat -11px -12px;
-}
-
-.windows {
-    background: url('../images/sprits/spritesheet.png')no-repeat -159px -12px;
-}
+/* --HEADER END-- */
 
 
-/* --------------------------------------------------------------------------------------------------- */
-/* -----------------------------------------------------------------------------STYLE FOR MAIN CONTENT */
-/* --------------------------------------------------------------------------------------------------- */
+/* --STYLE FOR MAIN CONTENT START-- */
 
-/* -------------------------------navigation styles */
-.features ul {
-    display: flex;
-}
-
-.features-container {
-    width: 73.75%;
-    margin: 0 auto;
-}
+/* NAVIGATION START */
 
 .feature-item {
     width: 26.75%;
+    float: left;
     padding: 5.042% 0 4.6184% 0;
 }
 
-.feature-item:nth-child(2) {
-    width: 26.949%;
-    margin-right: 41px;
+.feature-item:not(:last-child) {
+    margin-right: 9.75%;
 }
 
-.feature-item:first-child,
-.feature-item:nth-child(2) {
-    float: left;
-    margin-right: 9.579%;
-}
-
-.feature-item:last-child {
-    float: right;
-    /*! margin-right: 0.254%; */
+.features ul {
+    display: flex;
 }
 
 .feature-item-icon {
     margin: 0 auto;
 }
 
-.feature-item h2 {
-    padding: 9% 0 7.3%;
+.nav-title {
     margin: 0;
+    padding: 9% 0 7.3%;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 1.37rem;
+    line-height: 18px;
+    color: #222222;
     text-align: center;
 }
 
-.feature-item p {
-    padding: 0;
+.nav-title-note {
     margin: 0;
+    padding: 0;
+    font-family: 'HelveticaNeue-Regular';
+    font-size: 1rem;
+    line-height: 26px;
+    color: #848484;
     text-align: center;
 }
 
@@ -441,37 +354,127 @@ header {
     background: url('../images/sprits/spritesheet2.png')no-repeat -123px -8px;
 }
 
-/* -------------------------------------------form's and video styles*/
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    .feature-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .features ul {
+        justify-content: space-around;
+    }
+
+    .feature-item h2 {
+        font-size: 1.2rem;
+    }
+
+    .feature-item p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .features ul {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        width: auto;
+        margin: 0;
+        padding: 10% 20% 0;
+    }
+
+    .feature-item:last-of-type {
+        padding-bottom: 10%;
+    }
+}
+
+/* NAVIGATION END */
+
+/* FORM AND VIDEO START */
 
 .form-video-block {
     background-color: #e3e3e3;
     padding: 3.6% 0 3.5%;
 }
 
-.form-video-container {
-    width: 73.75%;
-    margin: 0 auto;
-}
-
 .form-section {
     float: left;
     width: 46.10%;
+    margin-right: 11.5%;
+    display: flex;
+    flex-direction: column;
 }
 
 .video-section {
     float: right;
     width: 42.372%;
-    /*! padding-top: 5%; */
 }
 
-.form-section h2 {
+.form-video {
+    display: flex;
+    /*! justify-content: space-between; */
+}
+
+.form-title {
     padding-bottom: 4.4%;
     margin: 0;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 18px;
+    color: #222222;
 }
 
-.form-section p {
+.form-title-note {
     padding-bottom: 3.865%;
     margin: 0;
+    font-family: 'HelveticaNeue-Regular';
+    font-size: 1rem;
+    line-height: 26px;
+    color: #848484;
+}
+
+.wrap-input{
+    width: auto;
+    display: flex;
+}
+
+.wrap-input input{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+input[type="email"] {
+    font-family: 'HelveticaNeue-Regular';
+    font-size: 1.125rem;
+    line-height: 18px;
+    color: #848484;
+    width: 56%;
+    padding: 3.865% 4.233% 3.129%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid #c8c8c8;
+}
+
+
+input[type="submit"] {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 18px;
+    color: #ffffff;
+    width: 26.320%;
+    padding: 3.681% 0.920%;
+    /*! margin-left: -1.104%; */
+    background-color: #2ecc71;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
 }
 
 .thumb-wrap {
@@ -491,6 +494,12 @@ header {
     width: 100%;
     height: 100%;
 }
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* FORM AND VIDEO END */
 
 /* ------------------------------------block social */
 
@@ -735,6 +744,7 @@ header {
     background: url("../images/sprits/spritesheet3.png")no-repeat -102px -52px;
 }
 
+/* --STYLE FOR MAIN CONTENT END-- */
 
 /* --------------------------------------------------------------------------------------------------- */
 /* -----------------------------------------------------------------------------------STYLE FOR FOOTER */
@@ -762,130 +772,8 @@ footer {
 /* ----------------------------------------------768 */
 @media only screen and (max-width: 1024px) {
 
-    /* -------------------------------------styles for banner's navigation */
-
-    .main-nav {
-        /*! padding-bottom: 8%; */
-    }
-
-    .operation-sistems,
-    .operation-sistems a {
-        /*! width: 60px; */
-        /*! height: 60px; */
-    }
-
-    .apple {
-        /*! background-position: -79px -10px; */
-    }
-
-    .android {
-        /*! background-position: -6px -8px; */
-    }
-
-    .windows {
-        /*! background-position: -154px -8px; */
-    }
-
-    /* -------------------------------navigation styles */
-    .container {
-        width: 95%;
-    }
-
-    .features-container {
-        width: 73.75%;
-        margin: 0 auto;
-    }
-
-    .feature-item:nth-child(2) {
-        width: 30%;
-        margin-right: 41px;
-    }
-
-    .feature-item:first-child,
-    .feature-item:nth-child(2) {
-        float: left;
-        margin-right: 2%;
-        width: 32%;
-    }
-
-    .feature-item:last-child {
-        float: right;
-        width: 32%;
-    }
-
-    .gear {
-        background-position: -11px -11px;
-    }
-
-    .star {
-        background-position: -243.5px -17px;
-    }
-
-    .planet {
-        background-position: -126px -13px;
-    }
-
-    .feature-item h2 {
-        font-size: 1.2rem;
-    }
-
-    .feature-item p {
-        font-size: 0.9rem;
-    }
-
-    .feature-item-icon,
-    .feature-item-icon>div {
-        width: 90px;
-        height: 90px;
-    }
-
-    /* -------------------------------------------form's and video styles*/
-
-    form {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    input[type="email"] {
-        font-size: 1.6rem;
-        width: 70%;
-        padding: 2.865% 4.233%;
-    }
 
 
-    input[type="submit"] {
-        font-size: 2rem;
-        width: 30%;
-        padding: 3.2% 1% 3.7%;
-    }
-
-    .form-video-block {
-        padding: 4% 0 4%;
-    }
-
-    .form-video-container {
-        width: 90%;
-    }
-
-    .form-section,
-    .video-section {
-        width: 100%;
-    }
-
-    .video-section {
-        padding-top: 5%;
-    }
-
-    .form-section h2 {
-        padding-bottom: 3%;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .form-section p {
-        padding-bottom: 4%;
-        text-align: center;
-    }
 
     /* ------------------------------------block social */
 
@@ -912,13 +800,7 @@ footer {
         margin-right: 5px;
     }
 
-    input[type="submit"] {
 
-        font-size: 2rem;
-        width: 30%;
-        padding: 3.2% 1% 3.7%;
-
-    }
 
 }
 
@@ -945,53 +827,6 @@ footer {
 /* ----------------------------------------------375px */
 
 @media only screen and (max-width: 375px) {
-    /* ---------------------------------------styles for banner's content */
-
-
-    /* -------------------------------------styles for banner's navigation */
-
-    .main-nav {
-        /*! padding-bottom: 14%; */
-        /*! margin: 0; */
-        /*! text-align: center; */
-    }
-
-    .main-nav ul {
-        justify-content: center;
-    }
-
-    .operation-sistems,
-    .operation-sistems a {
-        /*! border-radius: 50%; */
-        /*! width: 80px; */
-        /*! height: 80px; */
-        /*! opacity: 1; */
-    }
-
-    /*    -------------------------------------------------------------------------  */
-    .features {
-        height: 100vh;
-        flex-direction: column;
-    }
-
-    .features ul {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .feature-item:first-child,
-    .feature-item:nth-child(2) {
-        float: none;
-        margin: 0;
-        width: 95%;
-        padding: 0;
-    }
-
-    .feature-item:last-child {
-        float: none;
-        width: 95%;
-        padding: 0;
-    }
 
     .form-video-container {
         width: 95%;
